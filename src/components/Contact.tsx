@@ -3,169 +3,120 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
+    name: '',
+    email: '',
+    message: ''
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // In a real app, this would send to your backend
+    console.log('Form submitted:', formData);
+    alert('Thank you for your message! I\'ll get back to you soon.');
+    setFormData({ name: '', email: '', message: '' });
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData(prev => ({
       ...prev,
-      [name]: value
+      [e.target.name]: e.target.value
     }));
   };
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-
-    try {
-      // Simulate API call to backend (Go REST API)
-      // In production: POST to your Go backend endpoint
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      toast({
-        title: "Message sent successfully!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
-      });
-      
-      setFormData({ name: "", email: "", message: "" });
-    } catch (error) {
-      toast({
-        title: "Error sending message",
-        description: "Please try again later or contact me directly.",
-        variant: "destructive"
-      });
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-20 bg-black/50 backdrop-blur-sm">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+          <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent font-space-grotesk">
             Get In Touch
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Let's collaborate on your next DevOps or cloud-native project
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto font-inter">
+            Ready to discuss DevOps solutions or collaborate on cloud-native projects? Let's connect!
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           {/* Contact Info */}
-          <div className="space-y-8">
-            <div>
-              <h3 className="text-2xl font-semibold mb-6">Let's Connect</h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-8">
-                I'm always interested in discussing new opportunities, 
-                innovative projects, and ways to improve DevOps practices.
-              </p>
-            </div>
-
-            <div className="space-y-6">
+          <div>
+            <h3 className="text-2xl font-semibold mb-6 text-white font-space-grotesk">Contact Information</h3>
+            <div className="space-y-4">
               <div className="flex items-center gap-4">
-                <div className="bg-purple-500 p-3 rounded-lg">
+                <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
                   <Mail className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold">Email</h4>
-                  <p className="text-gray-600 dark:text-gray-300">dummyrobot.devops@gmail.com</p>
+                  <p className="font-semibold text-white font-inter">Email</p>
+                  <p className="text-gray-300 font-inter">dummyrobot.devops@gmail.com</p>
                 </div>
               </div>
-
+              
               <div className="flex items-center gap-4">
-                <div className="bg-blue-500 p-3 rounded-lg">
-                  <Phone className="h-6 w-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="font-semibold">Phone</h4>
-                  <p className="text-gray-600 dark:text-gray-300">Available upon request</p>
-                </div>
-              </div>
-
-              <div className="flex items-center gap-4">
-                <div className="bg-green-500 p-3 rounded-lg">
+                <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
                   <MapPin className="h-6 w-6 text-white" />
                 </div>
                 <div>
-                  <h4 className="font-semibold">Location</h4>
-                  <p className="text-gray-600 dark:text-gray-300">Remote / Global</p>
+                  <p className="font-semibold text-white font-inter">Location</p>
+                  <p className="text-gray-300 font-inter">Available for Remote Work</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center">
+                  <Phone className="h-6 w-6 text-white" />
+                </div>
+                <div>
+                  <p className="font-semibold text-white font-inter">Response Time</p>
+                  <p className="text-gray-300 font-inter">Within 24 hours</p>
                 </div>
               </div>
             </div>
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-lg">
+          <div className="bg-gray-900/90 backdrop-blur-sm p-8 rounded-lg border border-gray-700">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-2">
-                  Name *
-                </label>
                 <Input
-                  id="name"
-                  name="name"
                   type="text"
-                  required
+                  name="name"
+                  placeholder="Your Name"
                   value={formData.name}
-                  onChange={handleInputChange}
-                  placeholder="Your full name"
+                  onChange={handleChange}
+                  required
+                  className="bg-gray-800 border-gray-600 text-white placeholder-gray-400 font-inter"
                 />
               </div>
-
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-2">
-                  Email *
-                </label>
                 <Input
-                  id="email"
-                  name="email"
                   type="email"
-                  required
+                  name="email"
+                  placeholder="Your Email"
                   value={formData.email}
-                  onChange={handleInputChange}
-                  placeholder="your.email@example.com"
-                />
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-2">
-                  Message *
-                </label>
-                <Textarea
-                  id="message"
-                  name="message"
+                  onChange={handleChange}
                   required
-                  value={formData.message}
-                  onChange={handleInputChange}
-                  placeholder="Tell me about your project or how I can help..."
-                  rows={5}
+                  className="bg-gray-800 border-gray-600 text-white placeholder-gray-400 font-inter"
                 />
               </div>
-
-              <Button
-                type="submit"
-                className="w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600"
-                disabled={isSubmitting}
+              <div>
+                <Textarea
+                  name="message"
+                  placeholder="Your Message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows={4}
+                  className="bg-gray-800 border-gray-600 text-white placeholder-gray-400 resize-none font-inter"
+                />
+              </div>
+              <Button 
+                type="submit" 
+                className="w-full bg-gradient-to-r from-cyan-500 to-blue-500 hover:from-cyan-600 hover:to-blue-600 font-semibold font-inter"
               >
-                {isSubmitting ? (
-                  "Sending..."
-                ) : (
-                  <>
-                    <Send className="h-4 w-4 mr-2" />
-                    Send Message
-                  </>
-                )}
+                Send Message
               </Button>
             </form>
           </div>

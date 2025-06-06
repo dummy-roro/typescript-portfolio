@@ -13,7 +13,7 @@ const ThemeToggle = ({ darkMode, setDarkMode }: ThemeToggleProps) => {
       variant="ghost"
       size="icon"
       onClick={() => setDarkMode(!darkMode)}
-      className="relative"
+      className="relative text-white hover:text-cyan-400 hover:bg-gray-800"
     >
       {darkMode ? (
         <Sun className="h-5 w-5 transition-all" />
