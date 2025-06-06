@@ -40,19 +40,19 @@ const Index = () => {
   };
 
   return (
-    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-gray-900 text-white' : 'bg-white text-gray-900'}`}>
+    <div className={`min-h-screen transition-colors duration-300 ${darkMode ? 'dark bg-gradient-to-br from-gray-900 via-blue-950 to-gray-900 text-white' : 'bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 text-gray-900'}`}>
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+          <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">
             Dummy Robot
           </div>
           <div className="flex items-center gap-4">
-            <div className="hidden md:flex gap-6">
-              <a href="#about" className="hover:text-purple-500 transition-colors">About</a>
-              <a href="#projects" className="hover:text-purple-500 transition-colors">Projects</a>
-              <a href="#skills" className="hover:text-purple-500 transition-colors">Skills</a>
-              <a href="#contact" className="hover:text-purple-500 transition-colors">Contact</a>
+            <div className="hidden md:flex gap-6 text-lg">
+              <a href="#about" className="hover:text-blue-500 transition-colors">About</a>
+              <a href="#projects" className="hover:text-blue-500 transition-colors">Projects</a>
+              <a href="#skills" className="hover:text-blue-500 transition-colors">Skills</a>
+              <a href="#contact" className="hover:text-blue-500 transition-colors">Contact</a>
             </div>
             <div className="flex gap-2">
               <Button

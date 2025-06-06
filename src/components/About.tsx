@@ -3,10 +3,10 @@ import { Badge } from "@/components/ui/badge";
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-gray-50 dark:bg-gray-800">
+    <section id="about" className="py-20 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">
             About Me
           </h2>
           
@@ -32,28 +32,28 @@ const About = () => {
             </div>
             
             <div className="relative">
-              <div className="bg-gradient-to-br from-purple-500 to-blue-500 p-1 rounded-lg">
+              <div className="bg-gradient-to-br from-blue-500 to-cyan-500 p-1 rounded-lg">
                 <div className="bg-white dark:bg-gray-900 p-8 rounded-lg">
                   <div className="space-y-4">
                     <div className="flex justify-between">
                       <span className="font-semibold">Cloud Platforms</span>
-                      <span className="text-purple-500">AWS, Azure</span>
+                      <span className="text-blue-500">AWS, Azure</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="font-semibold">Container Orchestration</span>
-                      <span className="text-purple-500">Kubernetes, EKS</span>
+                      <span className="text-blue-500">Kubernetes, EKS</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="font-semibold">Infrastructure</span>
-                      <span className="text-purple-500">Terraform, Helm</span>
+                      <span className="text-blue-500">Terraform, Helm</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="font-semibold">CI/CD</span>
-                      <span className="text-purple-500">GitHub Actions, Jenkins</span>
+                      <span className="text-blue-500">GitHub Actions, Jenkins</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="font-semibold">Monitoring</span>
-                      <span className="text-purple-500">Prometheus, Grafana</span>
+                      <span className="text-blue-500">Prometheus, Grafana</span>
                     </div>
                   </div>
                 </div>

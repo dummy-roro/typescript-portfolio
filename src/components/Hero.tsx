@@ -37,7 +37,7 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-blue-900/20 to-green-900/20 dark:from-purple-900/40 dark:via-blue-900/40 dark:to-green-900/40"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-cyan-900/20 to-indigo-900/20 dark:from-blue-900/40 dark:via-cyan-900/40 dark:to-indigo-900/40"></div>
       
       {/* Content */}
       <div className="container mx-auto px-4 z-10 text-center">
@@ -62,7 +62,7 @@ const Hero = () => {
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-          <span className="bg-gradient-to-r from-purple-500 via-blue-500 to-green-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-500 via-cyan-500 to-indigo-500 bg-clip-text text-transparent">
             Dummy Robot
           </span>
         </h1>
@@ -74,7 +74,7 @@ const Hero = () => {
         <div className="flex gap-4 justify-center animate-fade-in">
           <Button 
             size="lg" 
-            className="bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600"
+            className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600"
             onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
           >
             View Projects

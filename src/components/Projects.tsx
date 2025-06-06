@@ -64,7 +64,7 @@ const Projects = () => {
     <section id="projects" className="py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">
             Featured Projects
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
@@ -74,10 +74,10 @@ const Projects = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-2 hover:border-purple-500/50">
+            <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-2 border-2 hover:border-blue-500/50 hover:bg-blue-50/50 dark:hover:bg-blue-950/50">
               <CardHeader>
                 <div className="flex justify-between items-start mb-2">
-                  <CardTitle className="text-lg font-semibold group-hover:text-purple-500 transition-colors">
+                  <CardTitle className="text-lg font-semibold group-hover:text-blue-500 transition-colors">
                     {project.name}
                   </CardTitle>
                   <div className="flex gap-2 text-sm text-gray-500">
