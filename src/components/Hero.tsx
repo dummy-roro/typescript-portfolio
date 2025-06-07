@@ -41,10 +41,10 @@ const Hero = () => {
       
       {/* Content */}
       <div className="container mx-auto px-4 z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Side - Terminal and Name */}
-          <div className="order-2 lg:order-1 animate-fade-in">
-            <div className="inline-block p-6 bg-gray-900 dark:bg-gray-800 rounded-lg border border-gray-700 font-mono text-left w-full max-w-lg">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
+          {/* Left Side - Terminal and Large Name */}
+          <div className="animate-fade-in">
+            <div className="inline-block p-6 bg-gray-900 dark:bg-gray-800 rounded-lg border border-gray-700 font-mono text-left w-full max-w-lg mb-8">
               <div className="flex items-center gap-2 mb-4">
                 <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                 <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
@@ -62,7 +62,7 @@ const Hero = () => {
               </div>
             </div>
             
-            <h1 className="text-6xl md:text-8xl lg:text-9xl font-bold mt-8 animate-fade-in">
+            <h1 className="text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem] font-bold leading-none animate-fade-in">
               <span className="bg-gradient-to-r from-blue-500 via-cyan-500 to-indigo-500 bg-clip-text text-transparent">
                 Dummy Robot
               </span>
@@ -70,7 +70,7 @@ const Hero = () => {
           </div>
           
           {/* Right Side - Description and Buttons */}
-          <div className="order-1 lg:order-2 animate-fade-in">
+          <div className="animate-fade-in">
             <p className="text-2xl md:text-3xl lg:text-4xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
               Building production-ready cloud-native systems with automation, CI/CD, and secure Kubernetes environments
             </p>
