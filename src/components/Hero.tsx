@@ -36,11 +36,11 @@ const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-cyan-900/20 to-indigo-900/20 dark:from-blue-900/40 dark:via-cyan-900/40 dark:to-indigo-900/40"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-cyan-900/20 to-indigo-900/20 dark:from-blue-900/40 dark:via-cyan-900/40 dark:to-indigo-900/40" />
 
       {/* Content */}
       <div className="container mx-auto px-4 z-10">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10 animate-fade-in">
+        <div className="flex flex-col md:flex-row-reverse items-center justify-center gap-10 animate-fade-in">
           {/* Terminal Box */}
           <div className="p-6 bg-gray-900 dark:bg-gray-800 rounded-lg border border-gray-700 font-mono text-left max-w-lg w-full">
             <div className="flex items-center gap-2 mb-4">
@@ -61,16 +61,15 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Name + Description + Buttons */}
-          <div className="text-center md:text-left">
+          {/* Heading, Description, Buttons */}
+          <div className="text-center md:text-left max-w-2xl">
             <h1 className="text-5xl md:text-8xl font-extrabold mb-6 bg-gradient-to-r from-blue-500 via-cyan-500 to-indigo-500 bg-clip-text text-transparent">
               Dummy Robot
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl">
+            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
               Building production-ready cloud-native systems with automation, CI/CD, and secure Kubernetes environments
             </p>
-
-            <div className="flex gap-4 justify-center md:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600"
