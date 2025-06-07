@@ -29,7 +29,7 @@ const Footer = () => {
               <Button
                 variant="ghost"
                 size="icon"
-                onClick={() => window.open('https://linkedin.com/in/dummy-roro', '_blank')}
+                onClick={() => window.open('https://linkedin.com/in/myat-soe-aung', '_blank')}
                 className="hover:bg-blue-600"
               >
                 <Linkedin className="h-5 w-5" />
@@ -37,7 +37,7 @@ const Footer = () => {
               <Button
                 variant="ghost"
                 size="icon"
-                onClick={() => window.open('mailto:dummyrobot.devops@gmail.com', '_blank')}
+                onClick={() => window.open('mailto:oniichang69@gmail.com', '_blank')}
                 className="hover:bg-green-600"
               >
                 <Mail className="h-5 w-5" />
