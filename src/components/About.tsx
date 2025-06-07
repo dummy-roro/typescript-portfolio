@@ -37,23 +37,23 @@ const About = () => {
                   <div className="space-y-4">
                     <div className="flex justify-between">
                       <span className="font-semibold">Cloud Platforms</span>
-                      <span className="text-blue-500">AWS, Azure</span>
+                      <span className="text-blue-500">AWS</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="font-semibold">Container Orchestration</span>
-                      <span className="text-blue-500">Kubernetes, EKS</span>
+                      <span className="text-blue-500">Kubernetes, EKS, Helm</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="font-semibold">Infrastructure</span>
-                      <span className="text-blue-500">Terraform, Helm</span>
+                      <span className="text-blue-500">Terraform, Ansible</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="font-semibold">CI/CD</span>
-                      <span className="text-blue-500">GitHub Actions, Jenkins</span>
+                      <span className="text-blue-500">Jenkins, GitHub Actions</span>
                     </div>
                     <div className="flex justify-between">
                       <span className="font-semibold">Monitoring</span>
-                      <span className="text-blue-500">Prometheus, Grafana</span>
+                      <span className="text-blue-500">Prometheus, Grafana, ELK, EFK</span>
                     </div>
                   </div>
                 </div>
