@@ -45,4 +45,61 @@ const Hero = () => {
           <div className="p-6 bg-gray-900 dark:bg-gray-800 rounded-lg border border-gray-700 font-mono text-left max-w-lg w-full">
             <div className="flex items-center gap-2 mb-4">
               <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-              <div className="w-3
+              <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+              <div className="w-3 h-3 bg-green-500 rounded-full"></div>
+            </div>
+            <div className="text-green-400">
+              <span className="text-blue-400">$</span> whoami
+            </div>
+            <div className="text-white mt-2">Dummy Robot</div>
+            <div className="text-green-400 mt-4">
+              <span className="text-blue-400">$</span> cat role.txt
+            </div>
+            <div className="text-white mt-2 min-h-[1.5rem]">
+              {text}
+              <span className="animate-pulse">|</span>
+            </div>
+          </div>
+
+          {/* Name + Description + Buttons */}
+          <div className="text-center md:text-left">
+            <h1 className="text-5xl md:text-8xl font-extrabold mb-6 bg-gradient-to-r from-blue-500 via-cyan-500 to-indigo-500 bg-clip-text text-transparent">
+              Dummy Robot
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl">
+              Building production-ready cloud-native systems with automation, CI/CD, and secure Kubernetes environments
+            </p>
+
+            <div className="flex gap-4 justify-center md:justify-start">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600"
+                onClick={() =>
+                  document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                View Projects
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                onClick={() =>
+                  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                Get In Touch
+              </Button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <ArrowDown className="h-6 w-6 text-gray-400" />
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
