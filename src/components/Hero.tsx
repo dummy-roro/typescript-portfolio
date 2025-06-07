@@ -40,59 +40,52 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-cyan-900/20 to-indigo-900/20 dark:from-blue-900/40 dark:via-cyan-900/40 dark:to-indigo-900/40"></div>
       
       {/* Content */}
-      <div className="container mx-auto px-4 z-10">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
-          {/* Left Side - Terminal and Large Name */}
-          <div className="animate-fade-in">
-            <div className="inline-block p-6 bg-gray-900 dark:bg-gray-800 rounded-lg border border-gray-700 font-mono text-left w-full max-w-lg mb-8">
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-              </div>
-              <div className="text-green-400">
-                <span className="text-blue-400">$</span> whoami
-              </div>
-              <div className="text-white mt-2">Dummy Robot</div>
-              <div className="text-green-400 mt-4">
-                <span className="text-blue-400">$</span> cat role.txt
-              </div>
-              <div className="text-white mt-2 min-h-[1.5rem]">
-                {text}<span className="animate-pulse">|</span>
-              </div>
+      <div className="container mx-auto px-4 z-10 text-center">
+        <div className="mb-8 animate-fade-in">
+          <div className="inline-block p-6 bg-gray-900 dark:bg-gray-800 rounded-lg border border-gray-700 font-mono text-left max-w-2xl">
+            <div className="flex items-center gap-2 mb-4">
+              <div className="w-3 h-3 bg-red-500 rounded-full"></div>
+              <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
+              <div className="w-3 h-3 bg-green-500 rounded-full"></div>
             </div>
-            
-            <h1 className="text-8xl md:text-9xl lg:text-[10rem] xl:text-[12rem] font-bold leading-none animate-fade-in">
-              <span className="bg-gradient-to-r from-blue-500 via-cyan-500 to-indigo-500 bg-clip-text text-transparent">
-                Dummy Robot
-              </span>
-            </h1>
-          </div>
-          
-          {/* Right Side - Description and Buttons */}
-          <div className="animate-fade-in">
-            <p className="text-2xl md:text-3xl lg:text-4xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              Building production-ready cloud-native systems with automation, CI/CD, and secure Kubernetes environments
-            </p>
-            
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-lg px-8 py-4"
-                onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                View Projects
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="text-lg px-8 py-4"
-                onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              >
-                Get In Touch
-              </Button>
+            <div className="text-green-400">
+              <span className="text-blue-400">$</span> whoami
+            </div>
+            <div className="text-white mt-2">Dummy Robot</div>
+            <div className="text-green-400 mt-4">
+              <span className="text-blue-400">$</span> cat role.txt
+            </div>
+            <div className="text-white mt-2 min-h-[1.5rem]">
+              {text}<span className="animate-pulse">|</span>
             </div>
           </div>
+        </div>
+        
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+          <span className="bg-gradient-to-r from-blue-500 via-cyan-500 to-indigo-500 bg-clip-text text-transparent">
+            Dummy Robot
+          </span>
+        </h1>
+        
+        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto animate-fade-in">
+          Building production-ready cloud-native systems with automation, CI/CD, and secure Kubernetes environments
+        </p>
+        
+        <div className="flex gap-4 justify-center animate-fade-in">
+          <Button 
+            size="lg" 
+            className="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600"
+            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+          >
+            View Projects
+          </Button>
+          <Button 
+            variant="outline" 
+            size="lg"
+            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
+          >
+            Get In Touch
+          </Button>
         </div>
       </div>
       

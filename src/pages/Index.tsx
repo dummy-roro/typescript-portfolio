@@ -7,7 +7,6 @@ import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ThemeToggle from "@/components/ThemeToggle";
-import Logo from "@/components/Logo";
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Download } from "lucide-react";
 
@@ -45,7 +44,9 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <Logo />
+          <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-500 to-cyan-500 bg-clip-text text-transparent">
+            Dummy Robot
+          </div>
           <div className="flex items-center gap-4">
             <div className="hidden md:flex gap-6 text-lg">
               <a href="#about" className="hover:text-blue-500 transition-colors">About</a>
