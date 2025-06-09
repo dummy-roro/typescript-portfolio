@@ -1,4 +1,3 @@
-
 import React from "react";
 
 const Skills = () => {
@@ -118,7 +117,7 @@ const Skills = () => {
         },
         { 
           name: "OWASP ZAP", 
-          logo: "https://www.zaproxy.org/docs/desktop/ui/images/zap64x64.png",
+          logo: "https://raw.githubusercontent.com/zaproxy/zaproxy/main/zap/src/main/resources/resource/zap64x64.png",
           color: "bg-purple-500" 
         }
       ]
