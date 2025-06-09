@@ -65,14 +65,14 @@ const Index = () => {
               <Button
                 variant="ghost"
                 size="icon"
-                onClick={() => window.open('https://linkedin.com/in/dummy-roro', '_blank')}
+                onClick={() => window.open('https://linkedin.com/in/myat-soe-aumg', '_blank')}
               >
                 <Linkedin className="h-5 w-5" />
               </Button>
               <Button
                 variant="ghost"
                 size="icon"
-                onClick={() => window.open('mailto:dummyrobot.devops@gmail.com', '_blank')}
+                onClick={() => window.open('mailto:myatsoe.aung@1cloudng.com', '_blank')}
               >
                 <Mail className="h-5 w-5" />
               </Button>
