@@ -18,39 +18,39 @@ const Projects = () => {
   const [projects] = useState<Project[]>([
     {
       name: "EKS-Terraform-GitHub-Actions",
-      description: "Configuring Production-Ready EKS Clusters with Terraform and GitHub Actions.",
-      tags: ["terraform", "eks", "github-actions", "aws"],
+      description: "Configuring Production-Ready EKS Clusters with Terraform and GitHub Actions and Jenkins.",
+      tags: ["terraform", "eks", "github-actions", "aws", "jenkins"],
       githubUrl: "https://github.com/dummy-roro/EKS-Terraform-GitHub-Actions"
     },
     {
-      name: "EKS-ArgoCD-AWS-LB-Controller-Terraform",
-      description: "Terraform to bootstrap EKS with ArgoCD, Prometheus, Grafana, and AWS LB Controller.",
-      tags: ["terraform", "eks", "argocd", "prometheus", "grafana"],
-      githubUrl: "https://github.com/dummy-roro/EKS-ArgoCD-AWS-LB-Controller-Terraform"
+      name: "Tic-Tac-Toe App",
+      description: "Tic Tac Toe game deployment with DevSecOps practices using GitOps.",
+      tags: ["eks", "argocd", "sonarqube", "trivy", "nodejs"],
+      githubUrl: "https://github.com/dummy-roro/nodejs-tic-tac-toe"
     },
     {
-      name: "End-to-End-Kubernetes-Three-Tier-DevSecOps-Project",
-      description: "Complete three-tier application deployment with DevSecOps practices on Kubernetes.",
-      tags: ["docker", "kubernetes", "jenkins", "aws", "sonarqube"],
-      githubUrl: "https://github.com/dummy-roro/End-to-End-Kubernetes-Three-Tier-DevSecOps-Project"
+      name: "Solar-System App",
+      description: "Complete application deployment with Full DevSecOps practices on Kubernetes.",
+      tags: ["docker", "kubernetes", "jenkins",,"aws", "sonarqube","argocd"],
+      githubUrl: "https://github.com/dummy-roro/solar-system"
     },
     {
-      name: "End-to-End-Kubernetes-DevSecOps-Tetris-Project",
-      description: "DevSecOps implementation of Tetris game deployment on Kubernetes cluster.",
-      tags: ["kubernetes", "devsecops", "game", "docker"],
-      githubUrl: "https://github.com/dummy-roro/End-to-End-Kubernetes-DevSecOps-Tetris-Project"
+      name: "Shorten-URL-App",
+      description: "URL shortener application with CI/CD pipeline and security scanning.",
+      tags: ["kubernetes", "devsecops", "golang", "docker", "github-actions"],
+      githubUrl: "https://github.com/dummy-roro/golang-shorten-url"
     },
     {
-      name: "Netflix-Clone-K8S-End-to-End-Project",
-      description: "Full Netflix clone deployment using Kubernetes with complete CI/CD pipeline.",
-      tags: ["kubernetes", "react", "microservices", "cicd"],
-      githubUrl: "https://github.com/dummy-roro/Netflix-Clone-K8S-End-to-End-Project"
+      name: "Portfolio Project with DevsecOps ",
+      description: "My personal portfolio showcasing DevOps projects and skills.",
+      tags: ["react", "tailwindcss", "typescript", "vite"],
+      githubUrl: "https://github.com/dummy-roro/typescript-portfolio"
     },
     {
-      name: "MERN-Stack-Project",
-      description: "Complete MERN stack application with DevOps deployment practices.",
-      tags: ["mongodb", "express", "react", "nodejs", "docker"],
-      githubUrl: "https://github.com/dummy-roro/MERN-Stack-Project"
+      name: "Three-tier Java Spring Boot App",
+      description: "Java Spring Boot application with CI/CD pipeline and security practices.",
+      tags: ["java", "spring-boot", "jenkins", "docker", "kubernetes","mongodb"],
+      githubUrl: "https://github.com/dummy-roro/"
     }
   ]);
 
