@@ -32,7 +32,7 @@ const Projects = () => {
       name: "Solar System App",
       description: "Complete application deployment with Full DevSecOps practices on Kubernetes.",
       tags: ["docker", "kubernetes", "jenkins",,"aws"],
-      githubUrl: "https://github.com/dummy-roro/solar-system"
+      githubUrl: "https://github.com/dummy-roro/Two-Tier-SolarSystemApp-Node-Mongodb"
     },
     {
       name: "Shorten URL App",
@@ -50,7 +50,7 @@ const Projects = () => {
       name: "ToDo App",
       description: "Java Spring Boot application with CI/CD pipeline and security practices.",
       tags: ["spring-boot", "jenkins", "docker", "kubernetes"],
-      githubUrl: "https://github.com/dummy-roro/"
+      githubUrl: "https://github.com/dummy-roro/Three-Tier-ToDoApp-React-Node-Mongodb"
     }
   ]);
 
