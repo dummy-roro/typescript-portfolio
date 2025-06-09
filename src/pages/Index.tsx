@@ -92,7 +92,7 @@ const Index = () => {
       </nav>
 
       {/* Main Content */}
-      <main className="pt-20">
+      <main className="pt-[72px]">
         <Hero />
         <About />
         <Projects />
