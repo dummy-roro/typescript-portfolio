@@ -17,37 +17,37 @@ interface Project {
 const Projects = () => {
   const [projects] = useState<Project[]>([
     {
-      name: "EKS-Terraform-GitHub-Actions",
+      name: "EKS with Terraform",
       description: "Configuring Production-Ready EKS Clusters with Terraform and GitHub Actions and Jenkins.",
       tags: ["terraform", "eks", "aws", "jenkins"],
       githubUrl: "https://github.com/dummy-roro/EKS-Terraform-GitHub-Actions"
     },
     {
-      name: "Nodejs-tic-tac-toe",
+      name: "Tic Tac Toe App",
       description: "Tic Tac Toe game deployment with DevSecOps practices using GitOps.",
       tags: ["eks", "argocd", "devsecops", "nodejs"],
       githubUrl: "https://github.com/dummy-roro/nodejs-tic-tac-toe"
     },
     {
-      name: "Solar-Two-Tier-SolarSystemApp-Node-Mongodb",
+      name: "Solar System App",
       description: "Complete application deployment with Full DevSecOps practices on Kubernetes.",
       tags: ["docker", "kubernetes", "jenkins",,"aws"],
       githubUrl: "https://github.com/dummy-roro/solar-system"
     },
     {
-      name: "golang-shorten-url",
+      name: "Shorten URL App",
       description: "URL shortener application with CI/CD pipeline and security scanning.",
       tags: ["kubernetes", "devsecops", "golang", "github-actions"],
       githubUrl: "https://github.com/dummy-roro/golang-shorten-url"
     },
     {
-      name: "Portfolio Project with DevsecOps ",
+      name: "Portfolio Project",
       description: "My personal portfolio showcasing DevOps projects and skills.",
       tags: ["react", "tailwindcss", "typescript", "vite"],
       githubUrl: "https://github.com/dummy-roro/typescript-portfolio"
     },
     {
-      name: "Three-Tier-ToDoApp-React-Node-Mongodb",
+      name: "ToDo App",
       description: "Java Spring Boot application with CI/CD pipeline and security practices.",
       tags: ["spring-boot", "jenkins", "docker", "kubernetes"],
       githubUrl: "https://github.com/dummy-roro/"
