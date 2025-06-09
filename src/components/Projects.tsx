@@ -19,25 +19,25 @@ const Projects = () => {
     {
       name: "EKS-Terraform-GitHub-Actions",
       description: "Configuring Production-Ready EKS Clusters with Terraform and GitHub Actions and Jenkins.",
-      tags: ["terraform", "eks", "github-actions", "aws", "jenkins"],
+      tags: ["terraform", "eks", "aws", "jenkins"],
       githubUrl: "https://github.com/dummy-roro/EKS-Terraform-GitHub-Actions"
     },
     {
-      name: "Tic-Tac-Toe App",
+      name: "Nodejs-tic-tac-toe",
       description: "Tic Tac Toe game deployment with DevSecOps practices using GitOps.",
-      tags: ["eks", "argocd", "sonarqube", "trivy", "nodejs"],
+      tags: ["eks", "argocd", "devsecops", "nodejs"],
       githubUrl: "https://github.com/dummy-roro/nodejs-tic-tac-toe"
     },
     {
-      name: "Solar-System App",
+      name: "Solar-Two-Tier-SolarSystemApp-Node-Mongodb",
       description: "Complete application deployment with Full DevSecOps practices on Kubernetes.",
-      tags: ["docker", "kubernetes", "jenkins",,"aws", "sonarqube","argocd"],
+      tags: ["docker", "kubernetes", "jenkins",,"aws"],
       githubUrl: "https://github.com/dummy-roro/solar-system"
     },
     {
-      name: "Shorten-URL-App",
+      name: "golang-shorten-url",
       description: "URL shortener application with CI/CD pipeline and security scanning.",
-      tags: ["kubernetes", "devsecops", "golang", "docker", "github-actions"],
+      tags: ["kubernetes", "devsecops", "golang", "github-actions"],
       githubUrl: "https://github.com/dummy-roro/golang-shorten-url"
     },
     {
@@ -47,9 +47,9 @@ const Projects = () => {
       githubUrl: "https://github.com/dummy-roro/typescript-portfolio"
     },
     {
-      name: "Three-tier Java Spring Boot App",
+      name: "Three-Tier-ToDoApp-React-Node-Mongodb",
       description: "Java Spring Boot application with CI/CD pipeline and security practices.",
-      tags: ["java", "spring-boot", "jenkins", "docker", "kubernetes","mongodb"],
+      tags: ["spring-boot", "jenkins", "docker", "kubernetes"],
       githubUrl: "https://github.com/dummy-roro/"
     }
   ]);
